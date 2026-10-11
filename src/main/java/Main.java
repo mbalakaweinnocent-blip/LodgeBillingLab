@@ -190,7 +190,7 @@ public class Main extends Application {
         Button loginBtn = accentButton("Log in");
         loginBtn.setMaxWidth(Double.MAX_VALUE);
         loginBtn.setOnAction(e -> {
-            if (user.getText().equals("admin") && pass.getText().equals("1234")) {
+            if (user.getText().equals("Admin") && pass.getText().equals("1234")) {
                 showBilling();
             } else {
                 error.setText("Wrong username or password.");
@@ -457,8 +457,7 @@ public class Main extends Application {
         nightsField.clear();
         extrasField.setText("0");
         paidField.setText("0");
-        notesArea.clear();
-        statusLabel.setText("");
+        notesArea.clear();statusLabel.setText("");
     }
 
     private void showStatus(String msg, boolean isError) {
